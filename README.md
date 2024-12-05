@@ -9,19 +9,19 @@ If the points and other future additions get moved to the server, then there wil
 
 ## API Routes and Responses
 
-***User Creation*** (**/login/\<id\>**)\
+***User Creation*** (`/login/<id>`)\
 This route can respond with a few things:
 - No Content (The user isnt real on steam. AKA an invalid Steam ID) **204**
 - Internal Server Error (Failed to write to the DB) **500**
 - User data (**Defined below**)
 
-***User Data*** (**/data/\<id\>**)\
+***User Data*** (`/data/<id>`)\
 This route is pretty simple:
 - No Content (The user hasnt been registered yet, or its an invalid Steam ID) **204**
 - Internal Server Error (DB is broken) **500**
 - User Data (**Defined below**)
 
-***Update Points*** (**/data/\<id\>/update_points/\<+-points\>**)\
+***Update Points*** (`/data/<id>/update_points/<(+|-)points>`)\
 This route is also simple:
 - No Content (The user hasnt been registered yet, or its an invalid Steam ID) **204**
 - Internal Server Error (DB is broken) **500**
