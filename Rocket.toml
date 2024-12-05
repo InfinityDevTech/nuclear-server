@@ -1,2 +1,3 @@
+# woops,sure leaked these! 
 [default.databases.nuclear_db]
 url = "mongodb+srv://nuclear:nightmare@nuclearnightmare.gkqly.mongodb.net/?retryWrites=true&w=majority&appName=NuclearNightmare"
