@@ -1,0 +1,488 @@
+[Dec 5 09:33:06] [32m[INFO][0m Starting Rocket server...
+[Dec 5 09:33:07] [32m[INFO][0m 🔧 Configured for [4mdebug[0m.
+[Dec 5 09:33:07] [32m[INFO][0m address: [1;39m0.0.0.0[0m
+[Dec 5 09:33:07] [32m[INFO][0m port: [1;39m8000[0m
+[Dec 5 09:33:07] [32m[INFO][0m workers: [1;39m16[0m
+[Dec 5 09:33:07] [32m[INFO][0m max blocking threads: [1;39m512[0m
+[Dec 5 09:33:07] [32m[INFO][0m ident: [1;39mRocket[0m
+[Dec 5 09:33:07] [32m[INFO][0m IP header: [1;39mX-Real-IP[0m
+[Dec 5 09:33:07] [32m[INFO][0m limits: [1;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m
+[Dec 5 09:33:07] [32m[INFO][0m temp dir: [1;39m/tmp[0m
+[Dec 5 09:33:07] [32m[INFO][0m http/2: [1;39mtrue[0m
+[Dec 5 09:33:07] [32m[INFO][0m keep-alive: [1;39m5[0m[1;39ms[0m
+[Dec 5 09:33:07] [32m[INFO][0m tls: [1;39mdisabled[0m
+[Dec 5 09:33:07] [32m[INFO][0m shutdown: [1;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m
+[Dec 5 09:33:07] [32m[INFO][0m log level: [1;39mnormal[0m
+[Dec 5 09:33:07] [32m[INFO][0m cli colors: [1;39mtrue[0m
+[Dec 5 09:33:07] [32m[INFO][0m 📬 [35mRoutes[0m:
+[Dec 5 09:33:07] [32m[INFO][0m [36m([0m[39mindex[0m[36m)[0m [32mGET[0m [34m/[0m
+[Dec 5 09:33:07] [32m[INFO][0m [36m([0m[39mget_data[0m[36m)[0m [32mGET[0m [34m/data/<id>[0m
+[Dec 5 09:33:07] [32m[INFO][0m [36m([0m[39mpost_register[0m[36m)[0m [32mPOST[0m [34m/login/<id>[0m
+[Dec 5 09:33:07] [32m[INFO][0m [36m([0m[39mupdate_points[0m[36m)[0m [32mPOST[0m [34m/data/<id>/update_points/<points>[0m
+[Dec 5 09:33:07] [32m[INFO][0m 📡 [35mFairings[0m:
+[Dec 5 09:33:07] [32m[INFO][0m [1;39m'nuclear_db' Database Pool[0m ([1;34mignite, shutdown[0m)
+[Dec 5 09:33:07] [32m[INFO][0m [1;39mShield[0m ([1;34mliftoff, response, singleton[0m)
+[Dec 5 09:33:07] [32m[INFO][0m 🛡️ [35mShield[0m:
+[Dec 5 09:33:07] [32m[INFO][0m X-Content-Type-Options: [39mnosniff[0m
+[Dec 5 09:33:07] [32m[INFO][0m Permissions-Policy: [39minterest-cohort=()[0m
+[Dec 5 09:33:07] [32m[INFO][0m X-Frame-Options: [39mSAMEORIGIN[0m
+[Dec 5 09:33:07] [33m[WARN][0m 🚀 [1;39mRocket has launched from [4mhttp://0.0.0.0:8000[0m
+[Dec 5 09:34:57] [32m[INFO][0m [32mGET[0m [34m/login/76561198802528998[0m:
+[Dec 5 09:34:57] [31m[ERROR][0m No matching routes for [32mGET[0m [34m/login/76561198802528998[0m.
+[Dec 5 09:34:57] [33m[WARN][0m No [1;34m404[0m catcher registered. Using Rocket default.
+[Dec 5 09:34:57] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 09:35:01] [32m[INFO][0m [32mPOST[0m [34m/login/76561198802528998[0m:
+[Dec 5 09:35:01] [32m[INFO][0m Matched: [36m([0m[39mpost_register[0m[36m)[0m [32mPOST[0m [34m/login/<id>[0m
+[Dec 5 09:35:02] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 09:35:02] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 09:35:23] [32m[INFO][0m [32mPOST[0m [34m/points/76561198802528998[0m:
+[Dec 5 09:35:23] [31m[ERROR][0m No matching routes for [32mPOST[0m [34m/points/76561198802528998[0m.
+[Dec 5 09:35:23] [33m[WARN][0m No [1;34m404[0m catcher registered. Using Rocket default.
+[Dec 5 09:35:23] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 09:35:36] [32m[INFO][0m [32mPOST[0m [34m/data/76561198802528998[0m:
+[Dec 5 09:35:36] [31m[ERROR][0m No matching routes for [32mPOST[0m [34m/data/76561198802528998[0m.
+[Dec 5 09:35:36] [33m[WARN][0m No [1;34m404[0m catcher registered. Using Rocket default.
+[Dec 5 09:35:36] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 09:35:39] [32m[INFO][0m [32mGET[0m [34m/data/76561198802528998[0m:
+[Dec 5 09:35:39] [32m[INFO][0m Matched: [36m([0m[39mget_data[0m[36m)[0m [32mGET[0m [34m/data/<id>[0m
+[Dec 5 09:35:39] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 09:35:39] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 09:36:31] [32m[INFO][0m [32mGET[0m [34m/data/76561198802528998[0m:
+[Dec 5 09:36:31] [32m[INFO][0m Matched: [36m([0m[39mget_data[0m[36m)[0m [32mGET[0m [34m/data/<id>[0m
+[Dec 5 09:36:31] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 09:36:31] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 10:18:27] [32m[INFO][0m [32mGET[0m [34m/data/76561198802528998[0m:
+[Dec 5 10:18:27] [32m[INFO][0m Matched: [36m([0m[39mget_data[0m[36m)[0m [32mGET[0m [34m/data/<id>[0m
+[Dec 5 10:18:30] [32m[INFO][0m [1;39mOutcome: [0m[31mError[0m([39m500 Internal Server Error[0m)
+[Dec 5 10:18:30] [33m[WARN][0m No [1;34m500[0m catcher registered. Using Rocket default.
+[Dec 5 10:18:30] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 10:29:35] [33m[WARN][0m Received SIGINT. Requesting shutdown.
+[Dec 5 10:29:35] [32m[INFO][0m Shutdown requested. Waiting for pending I/O...
+[Dec 5 10:29:35] [32m[INFO][0m Graceful shutdown completed successfully.
+[Dec 5 11:29:26] [32m[INFO][0m Starting Rocket server...
+[Dec 5 11:29:26] [32m[INFO][0m 🔧 Configured for [4mdebug[0m.
+[Dec 5 11:29:26] [32m[INFO][0m address: [1;39m0.0.0.0[0m
+[Dec 5 11:29:26] [32m[INFO][0m port: [1;39m8000[0m
+[Dec 5 11:29:26] [32m[INFO][0m workers: [1;39m16[0m
+[Dec 5 11:29:26] [32m[INFO][0m max blocking threads: [1;39m512[0m
+[Dec 5 11:29:26] [32m[INFO][0m ident: [1;39mRocket[0m
+[Dec 5 11:29:26] [32m[INFO][0m IP header: [1;39mX-Real-IP[0m
+[Dec 5 11:29:26] [32m[INFO][0m limits: [1;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m
+[Dec 5 11:29:26] [32m[INFO][0m temp dir: [1;39m/tmp[0m
+[Dec 5 11:29:26] [32m[INFO][0m http/2: [1;39mtrue[0m
+[Dec 5 11:29:26] [32m[INFO][0m keep-alive: [1;39m5[0m[1;39ms[0m
+[Dec 5 11:29:26] [32m[INFO][0m tls: [1;39mdisabled[0m
+[Dec 5 11:29:26] [32m[INFO][0m shutdown: [1;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m
+[Dec 5 11:29:26] [32m[INFO][0m log level: [1;39mnormal[0m
+[Dec 5 11:29:26] [32m[INFO][0m cli colors: [1;39mtrue[0m
+[Dec 5 11:29:26] [32m[INFO][0m 📬 [35mRoutes[0m:
+[Dec 5 11:29:26] [32m[INFO][0m [36m([0m[39mindex[0m[36m)[0m [32mGET[0m [34m/[0m
+[Dec 5 11:29:26] [32m[INFO][0m [36m([0m[39mget_data[0m[36m)[0m [32mGET[0m [34m/data/<id>[0m
+[Dec 5 11:29:26] [32m[INFO][0m [36m([0m[39mpost_register[0m[36m)[0m [32mPOST[0m [34m/login/<id>[0m
+[Dec 5 11:29:26] [32m[INFO][0m [36m([0m[39mlist_regions[0m[36m)[0m [32mGET[0m [34m/sessions/regions[0m
+[Dec 5 11:29:26] [32m[INFO][0m [36m([0m[39mupdate_points[0m[36m)[0m [32mPOST[0m [34m/data/<id>/update_points/<points>[0m
+[Dec 5 11:29:26] [32m[INFO][0m 📡 [35mFairings[0m:
+[Dec 5 11:29:26] [32m[INFO][0m [1;39mShield[0m ([1;34mliftoff, response, singleton[0m)
+[Dec 5 11:29:26] [32m[INFO][0m [1;39m'nuclear_db' Database Pool[0m ([1;34mignite, shutdown[0m)
+[Dec 5 11:29:26] [32m[INFO][0m 🛡️ [35mShield[0m:
+[Dec 5 11:29:26] [32m[INFO][0m X-Frame-Options: [39mSAMEORIGIN[0m
+[Dec 5 11:29:26] [32m[INFO][0m Permissions-Policy: [39minterest-cohort=()[0m
+[Dec 5 11:29:26] [32m[INFO][0m X-Content-Type-Options: [39mnosniff[0m
+[Dec 5 11:29:26] [33m[WARN][0m 🚀 [1;39mRocket has launched from [4mhttp://0.0.0.0:8000[0m
+[Dec 5 11:29:29] [32m[INFO][0m [32mGET[0m [34m/sessions[0m:
+[Dec 5 11:29:29] [31m[ERROR][0m No matching routes for [32mGET[0m [34m/sessions[0m.
+[Dec 5 11:29:29] [33m[WARN][0m No [1;34m404[0m catcher registered. Using Rocket default.
+[Dec 5 11:29:29] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:29:46] [32m[INFO][0m [32mGET[0m [34m/sessions/regions[0m:
+[Dec 5 11:29:46] [32m[INFO][0m Matched: [36m([0m[39mlist_regions[0m[36m)[0m [32mGET[0m [34m/sessions/regions[0m
+[Dec 5 11:29:46] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:29:46] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:30:30] [32m[INFO][0m [32mGET[0m [34m/sessions/NorthAmerica[0m:
+[Dec 5 11:30:30] [31m[ERROR][0m No matching routes for [32mGET[0m [34m/sessions/NorthAmerica[0m.
+[Dec 5 11:30:30] [33m[WARN][0m No [1;34m404[0m catcher registered. Using Rocket default.
+[Dec 5 11:30:30] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:31:03] [33m[WARN][0m Received SIGINT. Requesting shutdown.
+[Dec 5 11:31:03] [32m[INFO][0m Shutdown requested. Waiting for pending I/O...
+[Dec 5 11:31:03] [32m[INFO][0m Graceful shutdown completed successfully.
+[Dec 5 11:31:13] [32m[INFO][0m Starting Rocket server...
+[Dec 5 11:31:13] [32m[INFO][0m 🔧 Configured for [4mdebug[0m.
+[Dec 5 11:31:13] [32m[INFO][0m address: [1;39m0.0.0.0[0m
+[Dec 5 11:31:13] [32m[INFO][0m port: [1;39m8000[0m
+[Dec 5 11:31:13] [32m[INFO][0m workers: [1;39m16[0m
+[Dec 5 11:31:13] [32m[INFO][0m max blocking threads: [1;39m512[0m
+[Dec 5 11:31:13] [32m[INFO][0m ident: [1;39mRocket[0m
+[Dec 5 11:31:13] [32m[INFO][0m IP header: [1;39mX-Real-IP[0m
+[Dec 5 11:31:13] [32m[INFO][0m limits: [1;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m
+[Dec 5 11:31:13] [32m[INFO][0m temp dir: [1;39m/tmp[0m
+[Dec 5 11:31:13] [32m[INFO][0m http/2: [1;39mtrue[0m
+[Dec 5 11:31:13] [32m[INFO][0m keep-alive: [1;39m5[0m[1;39ms[0m
+[Dec 5 11:31:13] [32m[INFO][0m tls: [1;39mdisabled[0m
+[Dec 5 11:31:13] [32m[INFO][0m shutdown: [1;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m
+[Dec 5 11:31:13] [32m[INFO][0m log level: [1;39mnormal[0m
+[Dec 5 11:31:13] [32m[INFO][0m cli colors: [1;39mtrue[0m
+[Dec 5 11:31:13] [32m[INFO][0m 📬 [35mRoutes[0m:
+[Dec 5 11:31:13] [32m[INFO][0m [36m([0m[39mindex[0m[36m)[0m [32mGET[0m [34m/[0m
+[Dec 5 11:31:13] [32m[INFO][0m [36m([0m[39mget_data[0m[36m)[0m [32mGET[0m [34m/data/<id>[0m
+[Dec 5 11:31:13] [32m[INFO][0m [36m([0m[39mpost_register[0m[36m)[0m [32mPOST[0m [34m/login/<id>[0m
+[Dec 5 11:31:13] [32m[INFO][0m [36m([0m[39mlist_regions[0m[36m)[0m [32mGET[0m [34m/sessions/regions[0m
+[Dec 5 11:31:13] [32m[INFO][0m [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:31:13] [32m[INFO][0m [36m([0m[39mupdate_points[0m[36m)[0m [32mPOST[0m [34m/data/<id>/update_points/<points>[0m
+[Dec 5 11:31:13] [32m[INFO][0m 📡 [35mFairings[0m:
+[Dec 5 11:31:13] [32m[INFO][0m [1;39m'nuclear_db' Database Pool[0m ([1;34mignite, shutdown[0m)
+[Dec 5 11:31:13] [32m[INFO][0m [1;39mShield[0m ([1;34mliftoff, response, singleton[0m)
+[Dec 5 11:31:13] [32m[INFO][0m 🛡️ [35mShield[0m:
+[Dec 5 11:31:13] [32m[INFO][0m X-Content-Type-Options: [39mnosniff[0m
+[Dec 5 11:31:13] [32m[INFO][0m X-Frame-Options: [39mSAMEORIGIN[0m
+[Dec 5 11:31:13] [32m[INFO][0m Permissions-Policy: [39minterest-cohort=()[0m
+[Dec 5 11:31:13] [33m[WARN][0m 🚀 [1;39mRocket has launched from [4mhttp://0.0.0.0:8000[0m
+[Dec 5 11:31:52] [32m[INFO][0m [32mGET[0m [34m/sessions/NorthAmerica[0m:
+[Dec 5 11:31:52] [31m[ERROR][0m No matching routes for [32mGET[0m [34m/sessions/NorthAmerica[0m.
+[Dec 5 11:31:52] [33m[WARN][0m No [1;34m404[0m catcher registered. Using Rocket default.
+[Dec 5 11:31:52] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:31:57] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:31:57] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:31:57] [33m[WARN][0m Note: Using `String` as a parameter type is inefficient. Use `&str` instead.
+[Dec 5 11:31:57] [32m[INFO][0m `String` is used a parameter guard in src/session.rs:108.
+[Dec 5 11:31:57] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:31:57] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:32:54] [33m[WARN][0m Received SIGINT. Requesting shutdown.
+[Dec 5 11:32:54] [32m[INFO][0m Shutdown requested. Waiting for pending I/O...
+[Dec 5 11:32:54] [32m[INFO][0m Graceful shutdown completed successfully.
+[Dec 5 11:33:03] [32m[INFO][0m Starting Rocket server...
+[Dec 5 11:33:03] [32m[INFO][0m 🔧 Configured for [4mdebug[0m.
+[Dec 5 11:33:03] [32m[INFO][0m address: [1;39m0.0.0.0[0m
+[Dec 5 11:33:03] [32m[INFO][0m port: [1;39m8000[0m
+[Dec 5 11:33:03] [32m[INFO][0m workers: [1;39m16[0m
+[Dec 5 11:33:03] [32m[INFO][0m max blocking threads: [1;39m512[0m
+[Dec 5 11:33:03] [32m[INFO][0m ident: [1;39mRocket[0m
+[Dec 5 11:33:03] [32m[INFO][0m IP header: [1;39mX-Real-IP[0m
+[Dec 5 11:33:03] [32m[INFO][0m limits: [1;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m
+[Dec 5 11:33:03] [32m[INFO][0m temp dir: [1;39m/tmp[0m
+[Dec 5 11:33:03] [32m[INFO][0m http/2: [1;39mtrue[0m
+[Dec 5 11:33:03] [32m[INFO][0m keep-alive: [1;39m5[0m[1;39ms[0m
+[Dec 5 11:33:03] [32m[INFO][0m tls: [1;39mdisabled[0m
+[Dec 5 11:33:03] [32m[INFO][0m shutdown: [1;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m
+[Dec 5 11:33:03] [32m[INFO][0m log level: [1;39mnormal[0m
+[Dec 5 11:33:03] [32m[INFO][0m cli colors: [1;39mtrue[0m
+[Dec 5 11:33:03] [32m[INFO][0m 📬 [35mRoutes[0m:
+[Dec 5 11:33:03] [32m[INFO][0m [36m([0m[39mindex[0m[36m)[0m [32mGET[0m [34m/[0m
+[Dec 5 11:33:03] [32m[INFO][0m [36m([0m[39mget_data[0m[36m)[0m [32mGET[0m [34m/data/<id>[0m
+[Dec 5 11:33:03] [32m[INFO][0m [36m([0m[39mpost_register[0m[36m)[0m [32mPOST[0m [34m/login/<id>[0m
+[Dec 5 11:33:03] [32m[INFO][0m [36m([0m[39mlist_regions[0m[36m)[0m [32mGET[0m [34m/sessions/regions[0m
+[Dec 5 11:33:03] [32m[INFO][0m [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:33:03] [32m[INFO][0m [36m([0m[39mupdate_points[0m[36m)[0m [32mPOST[0m [34m/data/<id>/update_points/<points>[0m
+[Dec 5 11:33:03] [32m[INFO][0m 📡 [35mFairings[0m:
+[Dec 5 11:33:03] [32m[INFO][0m [1;39mShield[0m ([1;34mliftoff, response, singleton[0m)
+[Dec 5 11:33:03] [32m[INFO][0m [1;39m'nuclear_db' Database Pool[0m ([1;34mignite, shutdown[0m)
+[Dec 5 11:33:03] [32m[INFO][0m 🛡️ [35mShield[0m:
+[Dec 5 11:33:03] [32m[INFO][0m X-Content-Type-Options: [39mnosniff[0m
+[Dec 5 11:33:03] [32m[INFO][0m X-Frame-Options: [39mSAMEORIGIN[0m
+[Dec 5 11:33:03] [32m[INFO][0m Permissions-Policy: [39minterest-cohort=()[0m
+[Dec 5 11:33:03] [33m[WARN][0m 🚀 [1;39mRocket has launched from [4mhttp://0.0.0.0:8000[0m
+[Dec 5 11:33:53] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:33:53] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:33:53] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:33:53] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:33:56] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:33:56] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:33:56] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:33:56] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:02] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:02] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:02] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:02] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:02] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:02] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:02] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:02] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:02] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:02] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:02] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:02] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:03] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:03] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:03] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:03] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:03] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:03] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:03] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:03] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:03] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:03] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:03] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:03] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:03] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:03] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:03] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:03] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:03] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:03] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:03] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:03] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:03] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:03] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:03] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:03] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:03] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:03] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:03] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:03] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:04] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:04] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:04] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:04] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:05] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:05] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:05] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:05] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:05] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:05] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:05] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:05] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:05] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:05] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:05] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:05] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:05] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:05] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:05] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:05] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:06] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:06] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:06] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:06] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:07] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:07] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:07] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:07] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:07] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:07] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:07] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:07] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:08] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:08] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:08] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:08] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:08] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:08] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:08] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:08] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:09] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:09] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:09] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:09] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:09] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:09] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:09] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:09] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:09] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:09] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:09] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:09] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:10] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:10] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:10] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:10] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:10] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:10] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:10] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:10] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:10] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:10] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:10] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:10] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:11] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:11] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:11] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:11] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:11] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:11] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:11] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:11] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:11] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:11] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:11] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:11] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:12] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:12] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:12] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:12] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:23] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:23] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:23] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:23] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:25] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:25] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:25] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:25] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:25] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:25] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:25] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:25] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:26] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:26] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:26] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:26] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:26] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:26] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:26] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:26] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:26] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:26] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:26] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:26] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:26] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:26] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:26] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:26] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:27] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:27] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:27] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:27] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:27] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:27] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:27] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:27] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:27] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:27] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:27] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:27] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:32] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:32] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:32] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:32] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:32] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:32] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:32] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:32] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:32] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:32] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:32] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:32] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:32] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:32] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:32] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:32] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:32] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:32] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:32] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:32] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:33] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:33] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:33] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:33] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:33] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:33] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:33] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:33] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:33] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:33] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:33] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:33] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:33] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:33] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:33] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:33] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:33] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:33] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:33] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:33] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:34] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:34] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:34] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:34] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:34] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:34] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:34] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:34] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:34] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:34] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:34] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:34] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:34] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:34] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:34] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:34] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:34] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:34] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:34] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:34] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:34] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:34] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:34] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:34] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:34] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:34] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:34] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:34] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:35] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:35] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:35] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:35] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:35] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:35] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:35] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:35] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:35] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:35] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:35] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:35] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:35] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:35] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:35] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:35] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:35] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:35] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:35] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:35] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:35] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:35] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:35] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:35] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:36] [32m[INFO][0m [32mGET[0m [34m/sessions/list/NorthAmerica[0m:
+[Dec 5 11:34:36] [32m[INFO][0m Matched: [36m([0m[39mget_sessions_by_region[0m[36m)[0m [32mGET[0m [34m/sessions/list/<region>[0m
+[Dec 5 11:34:36] [32m[INFO][0m [1;39mOutcome: [0m[32mSuccess[0m([39m200 OK[0m)
+[Dec 5 11:34:36] [32m[INFO][0m [32mResponse succeeded.[0m
+[Dec 5 11:34:47] [33m[WARN][0m Received SIGINT. Requesting shutdown.
+[Dec 5 11:34:47] [32m[INFO][0m Shutdown requested. Waiting for pending I/O...
+[Dec 5 11:34:47] [32m[INFO][0m Graceful shutdown completed successfully.
