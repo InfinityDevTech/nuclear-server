@@ -60,7 +60,7 @@ async fn post_register(id: &str, db: Connection<DB>) -> Result<Json<UserData>, S
 }
 
 #[get("/data/<id>")]
-async fn get_points(id: &str, db: Connection<DB>) -> Result<Json<UserData>, Status> {
+async fn get_data(id: &str, db: Connection<DB>) -> Result<Json<UserData>, Status> {
     let collection: Collection<UserData> = db.database(DATABASE_NAME).collection(&COLLECTIONS[DBCollections::UserStatCollection]);
     let result = collection.find_one(
         doc! {
@@ -82,12 +82,47 @@ async fn get_points(id: &str, db: Connection<DB>) -> Result<Json<UserData>, Stat
 
 #[post("/data/<id>/update_points/<points>")]
 async fn update_points(id: &str, points: i32, db: Connection<DB>) -> Status {
-    Status::NotImplemented
+    let collection: Collection<UserData> = db.database(DATABASE_NAME).collection(&COLLECTIONS[DBCollections::UserStatCollection]);
+
+    let user = collection.find_one(
+        doc! {
+            "steam_id": id
+        },
+        None
+    ).await;
+
+    if let Ok(Some(mut user)) = user {
+        user.points += points as i64;
+
+        if user.points < 0 {
+            user.points = 0;
+        }
+
+        let result = collection.update_one(
+            doc! {
+                "steam_id": id
+            },
+            doc! {
+                "$set": {
+                    "points": user.points
+                }
+            },
+            None
+        ).await;
+
+        if let Ok(_result) = result {
+            Status::Ok
+        } else {
+            Status::InternalServerError
+        }
+    } else {
+        Status::NoContent
+    }
 }
 
 #[get("/")]
 async fn index() -> &'static str {
-    "Hello, world!"
+    "Nuclear Nightmare Server?"
 }
 
 #[launch]
@@ -110,6 +145,6 @@ async fn rocket() -> _ {
         }));
 
         info!("Starting Rocket server...");
-    rocket::custom(figment).attach(DB::init()).mount("/", routes![index, get_points, post_register])
+    rocket::custom(figment).attach(DB::init()).mount("/", routes![index, get_data, update_points, post_register])
     //rocket::build().attach(DB::init()).mount("/", routes![index, get_points, post_register])
 }

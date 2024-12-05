@@ -52,7 +52,7 @@ pub struct Perks {
 pub struct UserData {
     pub steam_id: String,
     pub last_known_username: String,
-    pub points: u64,
+    pub points: i64,
     pub perks: Perks
 }
 
