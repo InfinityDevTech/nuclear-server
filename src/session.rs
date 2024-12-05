@@ -4,7 +4,8 @@ use std::{
 };
 
 use lazy_static::lazy_static;
-use rocket::serde::json::Json;
+use reqwest::StatusCode;
+use rocket::{http::Status, serde::json::Json};
 use serde::{Deserialize, Serialize};
 use strum::IntoEnumIterator;
 use strum_macros::EnumIter;
@@ -126,4 +127,14 @@ pub async fn get_sessions_by_region(region: &str) -> Json<SessionListRes> {
     };
 
     Json(res)
+}
+
+#[derive(Serialize, Deserialize)]
+pub struct SessionCreateArgs {
+
+}
+
+#[post("/sessions/create", data = "<body>")]
+pub async fn create_session(body: Json<SessionCreateArgs>) -> Status {
+    Status::Ok
 }
